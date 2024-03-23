@@ -11,7 +11,7 @@ fetch("./assets/js/watchesJson.json")
 function renderArticles(watches) {
     watches.forEach(watch => {
         productsEl.innerHTML += `
-        <article class="product">
+            <article class="product">
             <h3 class="product-title">${watch.name}</h3>
             <img src="./assets/img/${watch.imgUrl}" alt="${watch.name}" />
             <p class="product-description">
@@ -22,7 +22,9 @@ function renderArticles(watches) {
               Tilføj til kurv <i class="fa-solid fa-cart-plus"></i>
             </button>
           </article>
-        `
+          `;
+
     });
+
 }
 
